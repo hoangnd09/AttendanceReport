@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_user_setting"
+        android:key="pref_key_user_setting">
+        <CheckBoxPreference
+            android:key="pref_filter_by_status"
+            android:title="@string/pref_filter_by_status"
+            android:summary="@string/pref_filter_by_status_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_email_server_setting">
+
+        <EditTextPreference
+            android:key="pref_key_smtp_host"
+            android:title="@string/pref_email_smtp_host"
+            android:defaultValue="mail.soosan.co.kr" />
+        <EditTextPreference
+            android:key="pref_key_smtp_port"
+            android:title="@string/pref_email_smtp_port"
+            android:defaultValue="25" />
+        <CheckBoxPreference
+            android:key="pref_key_smtp_auth"
+            android:title="@string/pref_email_smtp_auth"
+            android:summary="authenticate the user using the AUTH command"
+            android:defaultValue="false" />
+        <EditTextPreference
+            android:key="pref_key_smtp_username"
+            android:title="@string/pref_email_smtp_username"
+            android:defaultValue="" />
+        <EditTextPreference
+            android:key="pref_key_smtp_password"
+            android:title="@string/pref_email_smtp_password"
+            android:defaultValue="" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_email_setting">
+
+        <EditTextPreference
+            android:key="pref_key_sender"
+            android:title="@string/pref_email_sender_address"
+            android:defaultValue="hoangnguyen@soosan.co.kr" />
+        <EditTextPreference
+            android:key="pref_key_receiver"
+            android:title="@string/pref_email_receiver_address"
+            android:defaultValue="" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
